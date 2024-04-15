@@ -48,7 +48,7 @@ cat("TIME OF EXPERIENCE IN THE ROLE
     "Variance:", sd(
       bd$tempo.de.experiência.na.função) * sd(bd$tempo.de.experiência.na.função))
 
-# Bar Chart of the Education variable
+# Bar Chart of the Escolaridade variable
 bd %>%
   group_by(escolaridade) %>%
   summarise(
@@ -61,3 +61,25 @@ bd %>%
   geom_label(size = 5) +
   coord_flip()
 
+# Pie chart of the Curso Superior variable
+
+# Replacing empty fields with the text "Sem Curso Superior"
+bd$curso.superior[bd$curso.superior == ""] <- "Sem Curso Superior"
+
+bd %>%
+  group_by(curso.superior) %>%
+  summarise(
+    count_curso_superior = n()
+  ) %>%
+  
+  # Pie chart
+  ggplot(aes(
+    x = curso.superior,
+    y = count_curso_superior,
+    fill = curso.superior,
+    label = count_curso_superior
+  )) +
+  geom_bar(stat = "identity") +
+  geom_label(size = 5) +
+  coord_polar("y", start = 0) +
+  theme_void()
