@@ -83,3 +83,24 @@ bd %>%
   geom_label(size = 5) +
   coord_polar("y", start = 0) +
   theme_void()
+
+# Graph crossing the variables Gênero and Escolaridade
+bd %>%
+  group_by(escolaridade, gênero) %>%
+  summarise(
+    count_genero = n()
+  ) %>%
+  
+  ggplot(aes(
+    x = escolaridade,
+    y = count_genero,
+    fill = gênero,
+    label = count_genero
+  )) +
+  geom_col(position = "dodge") +
+  geom_text(aes(
+    label = count_genero),
+    position = position_dodge(0.9),
+    vjust = -.1
+  )
+
