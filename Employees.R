@@ -47,3 +47,17 @@ cat("TIME OF EXPERIENCE IN THE ROLE
     "Standard Deviation:", sd(bd$tempo.de.experiência.na.função),
     "Variance:", sd(
       bd$tempo.de.experiência.na.função) * sd(bd$tempo.de.experiência.na.função))
+
+# Bar Chart of the Education variable
+bd %>%
+  group_by(escolaridade) %>%
+  summarise(
+    count_escolaridade = n()
+  ) %>%
+  
+  # Bar Chart
+  ggplot(aes(x = escolaridade, y = count_escolaridade, label = count_escolaridade)) +
+  geom_bar(stat = "identity", fill = "blue") +
+  geom_label(size = 5) +
+  coord_flip()
+
