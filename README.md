@@ -4,11 +4,11 @@ Atividade básica de estatística aplicada com medidas de tendência central e d
 
 Essa atividade foi realizada para a disciplina de Estatística Aplicada do curso de Especialização em Big Data, Data Science and Data Analytics pela Universidade Unisinos.
 
-Linguagem de programação: R
+<strong> Linguagem de programação: </strong> R
 </br>
-IDE: RStudio
+<strong> IDE: </strong> RStudio
 
-#### Resultados encontrados
+#### :chart_with_upwards_trend: Resultados encontrados
 
 Idade
 
@@ -30,17 +30,17 @@ Tempo de experiência na função
 <img src="https://github.com/jessicagrunewald/Employees-CentralTendency_Dispersion/assets/166979978/9d85054b-f922-4f60-a262-d1d95b6a08c6" align="center" width="800" heigh="100"/>
 </br></br>
 
-Gráfico de Barras da variável Escolaridade
+:bar_chart: Gráfico de Barras da variável Escolaridade
 
 <img src="https://github.com/jessicagrunewald/Employees-CentralTendency_Dispersion/assets/166979978/f2b9f397-2993-4c29-a65d-f469c6c70e0f" align="center" width="800" heigh="100"/>
 </br></br>
 
-Gráfico de Pizza da variável Curso Superior
+:bar_chart: Gráfico de Pizza da variável Curso Superior
 
 <img src="https://github.com/jessicagrunewald/Employees-CentralTendency_Dispersion/assets/166979978/a24f7ffc-b22e-44a9-b59e-c3e7c63508ed" align="center" width="800" heigh="100"/>
 </br></br>
 
-Gráfico cruzando as variáveis Gênero e Escolaridade
+:bar_chart: Gráfico cruzando as variáveis Gênero e Escolaridade
 
 <img src="https://github.com/jessicagrunewald/Employees-CentralTendency_Dispersion/assets/166979978/0295ceab-72f4-4dac-9301-465e1bacd143" align="center" width="800" heigh="100"/>
 </br></br>
